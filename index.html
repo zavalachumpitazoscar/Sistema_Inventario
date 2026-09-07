@@ -32,9 +32,9 @@
   <div class="backdrop" id="backdrop"></div>
   <dialog id="formDialog">
     <form method="dialog" id="recordForm">
-      <div class="dialog-head"><div><p class="eyebrow">REGISTRO</p><h2 id="dialogTitle">Nuevo registro</h2></div><button value="cancel" class="icon-btn">×</button></div>
+      <div class="dialog-head"><div><p class="eyebrow">REGISTRO</p><h2 id="dialogTitle">Nuevo registro</h2></div><button value="cancel" formnovalidate class="icon-btn" aria-label="Cerrar ventana">×</button></div>
       <div class="form-grid" id="formFields"></div>
-      <div class="dialog-actions"><button value="cancel" class="secondary-btn">Cancelar</button><button value="default" class="primary-btn" id="saveBtn">Guardar registro</button></div>
+      <div class="dialog-actions"><button value="cancel" formnovalidate class="secondary-btn">Cancelar</button><button value="default" class="primary-btn" id="saveBtn">Guardar registro</button></div>
     </form>
   </dialog>
   <div class="toast" id="toast" role="status"></div>
