@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema profesional de inventario para pequeñas y medianas empresas.">
+  <title>Inventario | Panel de control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">I</span><div><strong>Inventario</strong><small>Gestión empresarial</small></div></div>
+      <nav id="mainNav" aria-label="Navegación principal"></nav>
+      <div class="sidebar-footer"><span class="avatar">OZ</span><div><strong>Administrador</strong><small>Acceso completo</small></div><button class="icon-btn" title="Cerrar sesión">↪</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+        <div><p class="eyebrow" id="sectionEyebrow">RESUMEN GENERAL</p><h1 id="pageTitle">Panel de control</h1></div>
+        <div class="top-actions">
+          <button class="icon-btn notification" title="Notificaciones">♢<span></span></button>
+          <button class="primary-btn" id="quickAction">＋ Nuevo movimiento</button>
+        </div>
+      </header>
+      <section class="content" id="content" aria-live="polite"></section>
+    </main>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+  <dialog id="formDialog">
+    <form method="dialog" id="recordForm">
+      <div class="dialog-head"><div><p class="eyebrow">REGISTRO</p><h2 id="dialogTitle">Nuevo registro</h2></div><button value="cancel" class="icon-btn">×</button></div>
+      <div class="form-grid" id="formFields"></div>
+      <div class="dialog-actions"><button value="cancel" class="secondary-btn">Cancelar</button><button value="default" class="primary-btn" id="saveBtn">Guardar registro</button></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
