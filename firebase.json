@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "firebase-config.example.js"],
+    "cleanUrls": true,
+    "headers": [{
+      "source": "**/*.@(js|css)",
+      "headers": [{"key": "Cache-Control", "value": "max-age=3600"}]
+    }]
+  },
+  "firestore": {"rules": "firestore.rules"}
+}
